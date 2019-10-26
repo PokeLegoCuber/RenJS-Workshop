@@ -1,0 +1,17 @@
+
+start:
+  - show street_morning: WITH FADE
+  - show marco: normal AT CENTER WITH FADE
+  - marco says: Hello.
+  - marco says happy: Welcome to the Tutorial Game!
+  - hide ALL:
+  - scene: scene1
+
+scene1:
+  - play morningBGM:
+  - show school_morning: WITH FADE 
+  - show marco: WITH FADE
+  - marco says: Woaah
+  - effect SHOWTITLE: 
+    title: Big upper text
+    subtitle: Small under text

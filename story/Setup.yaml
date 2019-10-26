@@ -1,0 +1,39 @@
+backgrounds:
+  school_morning: assets/backgrounds/school_corridor.jpg
+  street_morning: assets/backgrounds/school_front_morning.jpg
+  street_afternoon: assets/backgrounds/school_front_afternoon.jpg
+  end: assets/backgrounds/end.png
+characters:
+  marco:
+    displayName: Marco
+    speechColour: "#123022"
+    looks:
+      normal: assets/characters/Char1NormalSchool.png
+      happy: assets/characters/Char1HappySchool.png
+      angry: assets/characters/Char1AngrySchool.png
+      worry: assets/characters/Char1WorrySchool.png
+      normalC: assets/characters/Char1Normal.png
+      happyC: assets/characters/Char1Happy.png
+      angryC: assets/characters/Char1Angry.png
+cgs:
+  phone1: assets/objects/phone1.png
+  phone2: assets/objects/phone2.png
+
+music:
+  rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
+  morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
+sfx:
+  ringtoneSFX: assets/audio/nokia6210-24-elise.mp3
+  ringtoneSFX2: assets/audio/alcatel-top_secret.mp3
+  thunderSFX: assets/audio/thunder_strike_1.mp3
+extra:
+  image:
+    title: assets/gui/titles.png
+    rain: assets/ambient/rain.png
+    thunder: assets/effects/Thunder_Effect.png
+  # spritesheets:
+  #   explosion: assets/effects/explosion.png 450 274
+  #   static: assets/ambient/static.png 320 256
+  # scripts:
+  #   marble: assets/ambient/Marble.js
+  #   lightbeam: assets/ambient/LightBeam.js
