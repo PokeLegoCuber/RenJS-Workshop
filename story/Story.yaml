@@ -1,0 +1,121 @@
+start:
+  - var int: 5
+  - var boolean: true
+  - var string: "This is a string"
+  - show street_morning: WITH FADE CONTINUE
+  - show marco: normal AT CENTER WITH FADE
+  - marco says: Hello.
+  - marco says happy: Welcome to the Tutorial Game!
+  - text: The value of int is {int}
+  - text: The value of boolean is {boolean}
+  - text: The value of string is {string}
+  #We can make characters speak with variables
+  - if ({int} == 5):
+    - marco says: I have {int} apples, a day!
+  - else:
+    - marco says angry: I don't have 5 apples
+  - hide ALL: WITH FADE
+  - scene: scene1
+
+scene1:
+  - play morningBGM:
+  - show school_morning: WITH FADE
+  - show marco: WITH FADE
+  - marco says: Woaah
+  - effect SHOWTITLE:
+    title: Big upper text
+    subtitle: Small under text
+  - choice:
+    - ending 1:
+      - marco says happy: Off to ending 1!
+      - hide ALL: WITH FADE
+      - scene: ending1
+    - ending 2:
+      - marco says happy: Off to ending 2!
+      - hide ALL: WITH FADE
+      - scene: ending2
+
+ending1:
+  - show bus_station: WITH FADE
+  - show marco: normalC WITH FADE
+  - marco says: Hello, you've choosen ending 1.
+  - marco says happyC: Well, I'm going to head home now. See you later!
+  - hide ALL: WITH FADE
+  - scene: credits
+
+ending2:
+  - show store: WITH FADE
+  - show marco: normalC WITH FADE
+  - marco says: Hello, you've choosen ending 2.
+  - marco says happyC: Well, I have to go get some food for my dinner tonight. See you later!
+  - hide ALL: WITH FADE
+  - scene: credits
+
+credits:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - RenJS.V2 created by
+      - lunafromthemoon
+      - null
+      - In collaboration with
+      - RockDaFox
+      - null
+      - Inspired by Ren'Py
+      - Powered by PhaserJS
+      - null
+      - null
+      - Thanks for playing
+      - The Tutorial Game
+      - null
+      - written by
+      - lunafromthemoon
+      - null
+      - background art and cgs by
+      - konett
+      - null
+      - characters by
+      - Shida
+      - null
+      - music by
+      - Evan Schaeffer
+
+varsScene:
+  # numeric variables
+  - var score: 0
+  - var extraPoints: 3
+  - var score: "{score} + 10"
+  - var bonus: "{extraPoints} - 1"
+  - var totalScore: "({score} + {extraPoints}) * {bonus}"
+  # boolean variables
+  - var lightOn: true
+  - var lightOff: "!{lightOn}"
+  - var lampOn: true
+  - allLightsOn: "{lightOn} && {lampOn}"
+  - canRead: "{lightOn} || {lampOn}"
+  - highScore: "{score} > 10"
+  - perfectScore: "{score} == {maxScore}"
+  - lowScore: "{score} <= {maxScore} / 2"
+  # string variables
+  - var name: Marco
+  - var surname: Da Silva
+  - var wholeName: "Mr. {name} {surname}"
+  - text: "Hello {wholeName}, your score is {score}!"
+  # if
+  - if ({lightOn}):
+    - text: The light is on.
+  - else:
+    - text: The light is off.
+  - deuzi says: Let's check your score.
+  - deuzi says: "You have {score} points."
+  - if ({score} > 10):
+    - show deuzi: happy
+    - deuzi says: You did great! Congratulations!
+    - if ({name} == {favouriteStudent}):
+      - deuzi says: That's why you're my favourite student.
+  - else:
+    - deuzi says: It's not bad, but you'll have to study a bit more next time.
+    - call helloworld:
+      param1: hello
+      param2: world
+
