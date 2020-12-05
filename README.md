@@ -1,5 +1,7 @@
 # RenJS-Workshop
 
+[Demo](https://pokelegocuber.github.io/RenJS-Workshop/) of this project
+
 The purpose of this repository is to give beginners of RenJS the necessary support to build out their first visual novel game.
 
 There are 2 ways to get your RenJS project up and running on your machine.
@@ -26,7 +28,7 @@ Browser
 Text Editors
 * [Notepad++](https://notepad-plus-plus.org/) (Windows only)
 * [Sublime Text](https://www.sublimetext.com/ ) (Cross Platform)
-* [Atom](https://atom.io/)  (Cross Platform)
+* [Atom](https://atom.io/) (Cross Platform)
 * [Visual Studio Code](https://code.visualstudio.com/) (Cross Platform)
 
 Sound/Music
