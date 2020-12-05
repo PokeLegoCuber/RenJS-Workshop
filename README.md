@@ -19,7 +19,6 @@ There are 2 ways to get your RenJS project up and running on your machine.
 * This repository utilizes code from [here](https://gitlab.com/lunafromthemoon/RenJSTutorial)
 * [Itch.io page](https://lunafromthemoon.itch.io/renjs) from creator
 * [RenJS Documentation](https://lunafromthemoon.github.io/RenJS/)
-* Official GitHub repository of [RenJS](https://github.com/lunafromthemoon/RenJS)
 
 Browser
 * [FireFox Browser](https://www.mozilla.org/en-US/firefox/new/)
